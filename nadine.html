@@ -1,0 +1,224 @@
+<html>
+<head> 
+<style>
+body{
+    font-family: sans-serif;
+    text-align: center;
+}
+
+header{
+    letter-spacing: 6px;
+    background: crimson;
+    padding: 50px;
+}
+
+section{
+    padding: 30px;
+    margin-bottom: 40 px;
+}
+h2{
+    font-size: 2em;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 50em) { 
+.card {
+flex-basis: 325px;
+}
+header h1 {
+    font-size: 5em;
+}
+}
+
+/* CSS CARDS */
+.container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card {
+border: 1px solid #ccc;
+background-color: honeydew;
+margin: 25px;
+padding: 25px;
+box-shadow: 6px 6px 6px
+rgba(0,0,0,0.3);
+}
+
+.icons {
+font-size: 8em;
+padding: 25px;
+}
+button, .button {
+background: fuchsia;
+border: 0;
+color: whitesmoke;
+padding: 10px;
+width: 100%;
+margin-bottom: 10px;
+border-radius: 15px;
+}
+.blue {
+background: darkorchid;
+}
+
+td{
+    padding: 10px;
+    border: tomato;
+    border-radius: 15px;
+
+
+}
+table {
+    margin: auto;
+    border: darkorange;
+    border-radius: 15px;
+}
+#my-order { 
+    background-color: rgb(65, 90, 104);
+    padding: 25px;
+    border-radius: 15PX;
+}
+.footer {
+    padding: 30px;
+    background: marrow;
+}
+.doc{
+    border-radius: 18px;
+    width: 120px;
+}
+.ton{
+    font-size: 0.9em;
+    font-family:Times New roman;
+}
+.label{
+    border-radius: 15px;
+    height: 30px;
+}
+</style>
+</head>
+<body>
+    <header>
+<h1> HOLY NATION FAMILY</h1>
+<h4> Best and Awesome worship songs You like is here!!</h4>
+
+
+    </header>
+
+    <section>
+        <h2> <b>Be  With Us</b> </h2>
+<p>welcome to our perfect website where  the Best and Awesome worship songs You like is here!! </p>
+<br><br>
+<p> ABOUT US: Founded in 1999, by HOLY NATION FAMILY. 
+    We've served over 12000 Christians.  </p>    
+</section>
+
+<section class=" blue container">
+    <h2> SERVICES:// </h2>
+    <article class="card"> 
+        <div class="icons"> &#x1F60E;</div>
+       <h3> GOSPEL </h3>
+       <p class="ton"> HOLY NATION FAMILY. You get the worship songs and Prayes all in HOLY NATION FAMILY</p>
+       <button> Join us </button>
+    </article>
+<article class="card"> 
+<div class="icons">&#9829;</div>
+<h3>HOLY NATION FAMILY </h3>
+<p class="ton"> Ordering the best Gospel Songs  in HOLY NATION FAMILY</p>
+<button>Follow us</button>
+</article>
+</section>
+
+<section>
+    <h2> INSERT YOUR ORDER:</h2>
+  
+
+   <form action="my-form" id="my-form">  
+<div id="my-order">
+ <table >
+      <tr >
+          <td>NAME:</td>
+          <td> <input type="text" size="25" 
+name="my-name" class="label"> </td>
+      </tr>
+
+      <tr >
+           <td>ADDRESS:</td>
+           <td><input type="text" size="25" 
+name="my-address" class="label"></td>
+      </tr>
+      <tr>
+          <td> GOSPEL SONGS</td>
+          <td>
+              <select name="my-land" class="label">
+<option> none </option>
+<option> English songs</option>
+<option> Kinyarwanda songs</option>
+</select>
+          </td>
+      </tr>
+      <tr>
+          <td> Quantity: </td>
+          <td><input type="number" name="my-qty" 
+value="1" min="1" max="5000" class="label"></td>
+          <small></small>
+      </tr>
+      <tr>
+          <br>
+      </tr>
+      <tr>
+          <td colspan="2">
+            <input class="button" 
+type="button" 
+value="Process Order"
+onclick="placeOrder();" > 
+<input class="button" type="reset" value="Clear"> 
+          </td>
+      </tr>
+  </table> 
+<h1>WEBSITE
+  FORM:</h1>
+How your Songs could look like?
+<br>
+<input type="text" size="50" class="label">
+<br><br>
+<button class="doc">Submit</button>
+</div>
+</form>
+
+</section>
+</body>
+<script>
+function placeOrder() {
+    var orderForm = document.getElementById("my-form");
+    results= "<h3> success!!</h3> Here is your order.";
+    results += "<br>Name:" + orderForm.elements["my-name"].value;
+    results += "<br>Address:" + orderForm.elements["my-address"].value;
+    results += "<br>I like to order:" + orderForm.elements["my-land"].value;
+    results += "<br>Quatity:" + orderForm.elements["my-qty"].value;
+    var orderResults = document.getElementById("my-order");
+
+    orderResults.innerHTML = results;
+}
+</script>
+<div class=" footer">
+<h3> Thanks For Visiting</h3>
+<div class="container">
+<article class="card">
+    <h3> Get In Touch</h3>
+    <p>  Best and Awesome Music You Can Get!! </p>
+</article>
+<article class="card">
+    <h3> Contact Us</h3>
+    <p> We would like to hear from you &#128515;
+        <br> Call or email Us<br>
+        EMAIL:holynationgofamily1999@.com<br>
+        TEL:0781182234//
+       
+    </p>
+</article>
+</div>
+<p>Copyright -HolyNation &copy-2023 </p>
+</div>
+</html>

@@ -1,0 +1,192 @@
+<html>
+<head> 
+<style>
+body{
+    font-family: tahoma;
+    text-align: center;
+}
+
+header{
+    letter-spacing: 6px;
+    background: brown;
+    padding: 1px;
+}
+
+section{
+    padding: 30px;
+    margin-bottom: 40 px;
+}
+h2{
+    font-size: 2em;
+    width: 100%;
+background: indigo;
+}
+
+
+@media screen and (min-width: 50em) { 
+.card {
+flex-basis: 325px;
+}
+header h1 {
+    font-size: 5em;
+}
+}
+
+/* CSS CARDS */
+.container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card {
+border: 1px solid #ccc;
+background-color: ivory;
+margin: 25px;
+padding: 25px;
+box-shadow: 6px 6px 6px
+rgba(0,0,0,0.3);
+}
+
+.icons {
+font-size: 8em;
+padding: 25px;
+}
+button, .button {
+background: yellow;
+border: 0;
+color: white;
+padding: 10px;
+width: 100%;
+margin-bottom: 10px;
+}
+.blue {
+background: teal;
+}
+
+td{
+    padding: 10px;
+    border: solid black;
+
+
+}
+table {
+    margin: auto;
+    border: solid black;
+}
+#my-order { 
+    background-color: orange;
+    padding: 25px;
+}
+.footer {
+    padding: 30px;
+    background: pink;
+}
+
+
+</style>
+</head>
+<body>
+
+
+<section>
+    <h2> MY ORDER FORM</h2>
+  
+
+   <form action="my-form" id="my-form">  
+<div id="my-order">
+ <table>
+      <tr>
+          <td>FIRST NAME:</td>
+          <td> <input type="text" size="25" 
+name="my-name"> </td>
+      </tr>
+<tr>
+          <td>LAST NAME:</td>
+          <td> <input type="text" size="25" 
+name="my-name"> </td>
+      </tr>
+<tr>
+          <td>DISTRICT:</td>
+          <td> <input type="text" size="25" 
+name="my-name"> </td>
+      </tr>
+
+
+
+      <tr>
+           <td>ADDRESS:</td>
+           <td><input type="text" size="25" 
+name="my-address"></td>
+      </tr>
+      <tr>
+          <td> Choose The Country</td>
+          <td>
+              <select name="my-land">
+<option> Rwanda </option>
+<option> Kenya </option>
+<option> Uganda </option>
+</select>
+          </td>
+      </tr>
+      <tr>
+          <td> How many are you?: </td>
+          <td><input type="number" name="my-qty" 
+value="1" min="1" max="5000"></td>
+          
+      </tr>
+      <tr>
+          <br>
+      </tr>
+      <tr>
+          <td colspan="2">
+            <input class="button" 
+type="button" 
+value="REGISTER"
+onclick="placeOrder();" > 
+<input class="button" type="reset" value="Clear"> 
+          </td>
+      </tr>
+  </table> 
+<h1>we the best:</h1>
+What’s the brilliant idea you have ever had?
+<br>
+<input type="text" size="50">
+<br><br>
+<button>Submit</button>
+</div>
+</form>
+
+</section>
+</body>
+<script>
+function placeOrder() {
+    var orderForm = document.getElementById("my-form");
+    results= "<h3> success!!</h3> Here is your order.";
+    results += "<br>Name:" + orderForm.elements["my-name"].value;
+    results += "<br>Address:" + orderForm.elements["my-address"].value;
+    results += "<br>I like to order:" + orderForm.elements["my-land"].value;
+    results += "<br>Quatity:" + orderForm.elements["my-qty"].value;
+    var orderResults = document.getElementById("my-order");
+
+    orderResults.innerHTML = results;
+}
+</script>
+<div class=" footer">
+<h3> Thanks For Visiting</h3>
+<div class="container">
+<article class="card">
+    <h3> Get In Touch</h3>
+    <p>  Best and Awesome service ! </p>
+</article>
+<article class="card">
+    <h3> Contact Us</h3>
+    <p> We would like to hear from you &#128515;
+        <br> Call or email Us<br>
+        TELL: 004432ej 
+        EMAIL: getit@gmail.com
+    </p>
+</article>
+</div>
+<p>Copyright -Get It  &copy-2023 </p>
+</div>
+</html>

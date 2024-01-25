@@ -1,0 +1,178 @@
+<html>
+<head>
+	<title>PROJECT 3</title>
+</head>
+<style type="text/css">
+		*{
+			margin:0;
+			padding: 0;
+			font-family: sans-serif;
+		}
+		body{
+			overflow-x:none;	
+		}
+		nav{
+	    	width: 100%;
+	    	height:80px;
+	    	background: ghostwhite;
+	    	display: flex;
+	    	justify-content: space-between;
+	    }
+	    nav h1{
+	    	font-size: 30px;
+	    	color: olivedrab;
+	    	margin-left: 30px;
+
+	    }
+	    nav ul{
+	    	display: flex;
+	    	list-style: none;
+	    	padding: 10px;
+	    	margin-right: 40px;
+	    	padding:15px;
+	    }
+	    nav ul li a{
+	    	color: fuchsia;
+	    	text-decoration:none;
+	    	padding: 10px;
+	    }
+		.content1{
+			width: 100%;
+			padding-top: 150px;
+			padding-bottom: 150px;
+			text-align: center;
+			background-color: forestgreen;
+		}
+		.content1 h1{
+			color: wheat;
+		    font-size: 60px;
+		    text-align: center;
+		    letter-spacing: 5px;
+		    animation-name: head;
+		    animation-duration: 2s;
+		    animation-iteration-count: initial;
+		    letter-spacing: 10px;
+        }
+       
+        .content1 p{
+        	color: wheat;
+        	letter-spacing: 5px;
+        	 animation-name: headp;
+		    animation-duration: 4s;
+		    animation-iteration-count: initial;
+        }
+        .touch{
+        	width: 100%;
+        	text-align: center;
+        	padding: 20px;
+        }
+        .service{
+        	background-color: darksalmon;
+        	text-align: center;
+        	padding: 40px;
+        }
+        .service .boxes{
+        	display: flex;
+        	justify-content: space-around;
+        	flex-wrap: wrap;
+        	border border-radius: 20px;
+        }
+        .box{
+        	width: 20%;
+        	padding: 60px 0px 60px 0px;
+        	background-color: white;
+        	border border-radius: 20px;
+        }
+        button{
+        	padding: 5px ;
+        	border: 0px;
+        	background-color: black;
+        	border-radius: 10px;
+        	color: white;
+        	margin-top: 20px;
+        	cursor: pointer;
+        }
+        i{
+            font-size: 200%;
+            color: grey;
+            padding: 10px;
+        }
+        form{
+        	width: 40%;
+        	margin: auto;
+        	text-align: center;
+        	margin-top: 100px;
+        	background-color:black;
+        	color:forestgreen;
+        	border: 1px solid gray;
+        	margin-bottom: 50px;
+        	padding: 30px;
+        	border-radius: 20px;
+        }
+        form input{
+        	width: 90%;
+        	height: 30px;
+        	margin-top: 10px;
+        }
+        footer{
+        	width: 100%;
+        	background: blueviolet;
+        	padding: 40px 0px 40px 0px;
+        }
+        footer center{
+        	color: white;
+        }
+        .hh{
+        	font-size: 30px;
+        }
+        .tt{
+        	font-size: 25px;
+        }
+       
+	</style>
+<body>
+	<nav>
+		<center><h1>Technical Treatment</h1></center>
+		<ul>
+			<li><a href="cyubahiroEmmmanuellaproject1.html">PROJECT 1</a></li>
+			<li><a href="cyubahiroEmmmanuellaproject2.html">PROJECT 2</a></li>
+			<li><a href="cyubahiroEmmanuellaproject3.html">PROJECT 3</a></li>
+		</ul>
+	</nav>
+	<div class="content1">
+		<center><h1><b style="color: orange;">NTC</b> Best Treatement clinical services</h1></center><br><br>
+		<center><h4>Easily to get and also to use it try it!!</h4></center>
+</div>
+<div class="touch">
+	<h1>Get some notification of us</h1><br><br>
+	<p>welcome to our most brianty website which help us about helping people in ther medical affairs,easily and also in better way</p><br><br>
+	<p><b>About us:</b>Founded by Dr.Emmanuella cyb at tss school hepls over 100 patients</p>
+</div>
+<div class="service">
+		<h1>Treatment services we offer</h1><br><br>
+	<div class="boxes">
+		<div class="box">
+			<i class="fa-solid fa-vehicle"></i>
+			<p class="tt">we offer hospital homes for the sick people🥶🤧 and also the bus to help them get at home quickly ad safely🚑</p>
+            <button>provide more...</button>
+		</div>
+			<div class="box">
+			<i class="fa-solid fa-nurse"></i>
+			<p class="hh">we provide special treatment by giving you your personal nurse👩‍⚕️👨‍⚕️</p>
+            <button>provide more..</button>
+		</div>
+	</div>
+</div>
+<form>
+	<h1>Register here:</h1>
+	Firstname:<input type="text" name="firstname" placeholder="firstname..."><br>
+	Lastname:<input type="text" name="lastname" placeholder="lastname..."><br>
+	Username:<input type="text" name="username" placeholder="username..."><br>
+	Password:<input type="password" name="password" placeholder="password..."><br>
+	Submit<button  style="padding: 5px 5px 5px 5px;" name="submit" value="submit">create</button>
+</form>
+<footer>
+<center>All right reserved by Technicaltreatment&copy; 2023</center>
+</footer>
+</body>
+<html>

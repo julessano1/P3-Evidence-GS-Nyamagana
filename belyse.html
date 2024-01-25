@@ -1,0 +1,208 @@
+<html>
+<head> 
+<style>
+body{
+    font-family: tahoma;
+    text-align: center;
+}
+
+header{
+    letter-spacing: 6px;
+    background: indigo;
+    padding: 50px;
+}
+
+section{
+    padding: 30px;
+    margin-bottom: 40 px;
+}
+h2{
+    font-size: 2em;
+    width: 100%;
+}
+
+
+@media screen and (min-width: 50em) { 
+.card {
+flex-basis: 325px;
+}
+header h1 {
+    font-size: 5em;
+}
+}
+
+/* CSS CARDS */
+.container {
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
+}
+.card {
+border: 1px solid #ccc;
+background-color: yellow;
+margin: 25px;
+padding: 25px;
+box-shadow: 6px 6px 6px
+rgba(0,0,0,0.3);
+}
+
+.icons {
+font-size: 8em;
+padding: 25px;
+}
+button, .button {
+background: pink;
+border: 0;
+color: brown;
+padding: 10px;
+width: 100%;
+margin-bottom: 10px;
+}
+.blue {
+background: teal;
+}
+
+td{
+    padding: 10px;
+    border: yellow;
+}
+table {
+    margin: auto;
+    border: white;
+}
+#my-order { 
+    background-color: ;
+    padding: 25px;
+}
+.footer {
+    padding: 30px;
+    background: brown ;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+<h1> Kigali Potery</h1>
+<h4> Best and Awesome Potery Material You Can Get!!</h4>
+
+
+    </header>
+
+    <section>
+        <h2> Get In Touch With Us </h2>
+<p>welcome to our perfect Potery Shop where you get any type of Potery Material
+<br><br>
+<p> ABOUT US: Founded in 2021, 
+ we've sarved over 10000 clients  </p>    
+</section>
+
+<section class=" blue container">
+    <h2> SERVICES: </h2>
+    <article class="card"> 
+        <div class="icons"> &#x1F60d;</div>
+       <h3> Cup </h3>
+       <p> Our best product</p>
+       <button> Buy </button>
+    </article>
+<article class="card"> 
+<div class="icons">&#9820;</div>
+<h3>Best Potery Shop
+</h3>
+<p> Creates beautiful jobs for people </p>
+<button>Learn More</button>
+</article>
+</section>
+
+<section>
+    <h2> MY ORDER FORM</h2>
+  
+
+   <form action="my-form" id="my-form">  
+<div id="my-order">
+ <table>
+      <tr>
+          <td>NAME:</td>
+          <td> <input type="text" size="25" 
+name="my-name"> </td>
+      </tr>
+
+      <tr>
+           <td>ADDRESS:</td>
+           <td><input type="text" size="25" 
+name="my-address"></td>
+      </tr>
+      <tr>
+          <td> Best Potery Shop  </td>
+          <td>
+              <select name="our resturant">
+<option> CUP </option>
+<option> PLATE </option>
+<option> Calabase </option>
+</select>
+          </td>
+      </tr>
+      <tr>
+          <td> Quantity: </td>
+          <td><input type="number" name="my-qty" 
+value="1" min="1" max="5000"></td>
+          <small></small>
+      </tr>
+      <tr>
+          <br>
+      </tr>
+      <tr>
+          <td colspan="2">
+            <input class="button" 
+type="button" 
+value="Process Order"
+onclick="placeOrder();" > 
+<input class="button" type="reset" value="Clear"> 
+          </td>
+      </tr>
+  </table> 
+<h1>
+  FORM:</h1>
+What’s the brilliant idea you have ever had? our idea is to open a Potery Shop in order to help people in Rwanda.
+<br>
+<input type="text" size="50">
+<br><br>
+<button>Submit</button>
+</div>
+</form>
+
+</section>
+</body>
+<script>
+function placeOrder() {
+    var orderForm = document.getElementById("my-form");
+    results= "<h3> success!!</h3> Here is your order.";
+    results += "<br>Name:" + orderForm.elements["my-name"].value;
+    results += "<br>Address:" + orderForm.elements["my-address"].value;
+    results += "<br>I like to order:" + orderForm.elements["my-land"].value;
+    results += "<br>Quatity:" + orderForm.elements["my-qty"].value;
+    var orderResults = document.getElementById("my-order");
+
+    orderResults.innerHTML = results;
+}
+</script>
+<div class=" footer">
+<h3> Thanks For Visiting</h3>
+<div class="container">
+<article class="card">
+    <h3> Get In Touch</h3>
+    <p>  Best and Awesome resturant You Can Get!! </p>
+</article>
+<article class="card">
+    <h3> Contact Us</h3>
+    <p> We would like to hear from you;
+        <br> Call or email Us<br>
+        TELL: 983836461
+        EMAIL: kigalipotery@gmail.com
+    </p>
+</article>
+</div>
+<p>Copyright &copy-2023 </p>
+</div>
+</html>
